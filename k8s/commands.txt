@@ -18,12 +18,15 @@ minikube status
 kubectl commands
 ###########################################################
 
+kubectl get all
 kubectl get nodes
 kubectl get pod
 kubectl get pod -o wide
 kubectl get services
+kubectl get secret
 kubectl create deployment nginx-depl --image=nginx
 kubectl get deployment
+kubectl get deployment -o yaml
 kubectl get replicaset
 kubectl edit deployment nginx-depl
 
