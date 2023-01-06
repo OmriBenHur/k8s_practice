@@ -29,6 +29,11 @@ kubectl get deployment
 kubectl get deployment -o yaml
 kubectl get replicaset
 kubectl edit deployment nginx-depl
+kubectl create namespace {namespace-name} # better to create with a config file
+kubectl api-resources --namespaced=false # output all non namespaced resources
+kubectl api-resources --namespaced=true # output all namespaced resources
+
+
 
 ###########################################################
 debugging

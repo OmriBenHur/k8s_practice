@@ -1,0 +1,7 @@
+minikube start --driver docker
+minikube addons enable ingress
+minikube addons enable ingress-dns
+kubectl get pods -n ingress-nginx -o wide
+add 127.0.0.1 and the domain name configured in the ingress .yaml file into hosts file (/etc/host for linux and C:\Windows\System32\drivers\etc for windows)
+in another terminal, enter minikube tunnel and keep the terminal open
+domain should now route to the ingress'ed service.
